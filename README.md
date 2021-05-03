@@ -2,9 +2,9 @@
 
 I completed this code for my algorithms class. The code compares two different algorithms for calculating the shortest path between any and every node of a graph. The first algorithm is Dijkstra's algorithm and the second algorithm is the Bellman-Ford algorithm. The main purpose of this code is compare the run time of the two algorithm's with different sizes of graphs.
 
-##Dijkstra's Algorithm
+## Dijkstra's Algorithm
 
-##Bellman-Ford Algorithm
+## Bellman-Ford Algorithm
 
 ## Try it Yourself!
 

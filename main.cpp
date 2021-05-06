@@ -9,7 +9,7 @@ using namespace std;
 int MAX = numeric_limits<int>::max();
 
 vector<int> computeShortestPath(Graph g, int node){
-  //####implement the Dijkstra’s Algorithm here
+  // Dijkstra’s Algorithm
   int v = g.size();
   vector<int> D;
   list<int> adjacent;
@@ -49,7 +49,7 @@ vector<int> computeShortestPath(Graph g, int node){
 vector<vector<int> > computeAllPairsShortestPath(Graph g){
   vector<vector<int> > matrix;
   vector<int> dijktsraResult;
-  //####compute all possible shortest paths by calling the Dijkstra's Algorithm on each pair of nodes
+  // Calling Dijkstra's Algorithm on each pair of nodes
   for(int i = 0; i < g.size(); i++) {
     dijktsraResult = computeShortestPath(g, i);
     matrix.push_back(dijktsraResult);
@@ -58,7 +58,7 @@ vector<vector<int> > computeAllPairsShortestPath(Graph g){
 };
 
 Matrix computeAllPairsShortestPathDynamicProgramming(Graph g){
-  //####compute all possible shortest paths by implementing the dynamic programming approach
+  // Computing all possible shortest paths by implementing the dynamic programming approach
   vector<vector<int> > matrix(g.size(), vector<int>(g.size()));
   // Initiallizing the matrix based on graph g
   for(int i = 0; i < g.size(); i++) {

@@ -13,7 +13,7 @@ class Graph{
 
 public:
   Graph(int nNodes, int nEdges){
-    // you don't have to change anything here. This function will generate a random weighted graph given the
+    // This function will generate a random weighted graph given the
     // desired parameters (number of nodes and number of edges)
     srand (time(NULL));
 
@@ -36,12 +36,12 @@ public:
   }
 
   int size(){
-    //### return the number of nodes in the graph
+    // Returns the number of nodes in the graph
     return graph.size();
   }
 
   list<int> getConnectedNodes(int n){
-    //### return a list with the nodes connected to node
+    // Return a list with the nodes connected to input node
     list<int> conNode;
 
     for(int i = 0; i < graph[n].size(); i++) {
@@ -53,12 +53,12 @@ public:
   }
 
   int getEdgeWeight(int n, int n2){
-    //### return the weight assigned to a node
+    // Return the weight assigned to a edge
     return graph[n][n2];
   }
 
   bool connected(int n, int n2){
-    //### return true if the two nodes are connected
+    // Return true if the two nodes are connected
     if(graph[n][n2] == 0) {
       return false;
     }
@@ -68,7 +68,7 @@ public:
   }
 
   void print(){
-    //### you can implement this for debugging purposes
+    // I used this for debugging purposes
     for(int i = 0; i < graph.size(); i++) {
       for(int j = 0; j < graph.size(); j++) {
         cout << graph[i][j] << ",\t";
